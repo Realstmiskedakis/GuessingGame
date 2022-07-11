@@ -3,27 +3,12 @@
 Language: Python '3.10.5'
 Version: '1.0V'
 About this program:
-
 This program is a Guessing Number game that ask  the user's data and then the program says if the program's number is either lower or higher
 when the user finds the program's number then the code ends..
-
 '''
 
 # Packages / Libraries
-import os
 import random
-
-# A list of numbers from 0 to 30.
-numbers_list = [0, 1, 2, 3,
-                4, 5, 6,
-                7, 8, 9,
-                10, 11, 12,
-                13, 14, 15,
-                16, 17, 18,
-                19, 20, 21,
-                22, 23, 24,
-                25, 26, 27,
-                28, 29, 30]
 
 
 # The Guessing Function
@@ -33,9 +18,8 @@ def guessing():
     """
     # Start The Program
     
-    os.system('cls')
     attempts = 0
-    com_choice = random.choice(numbers_list)  # The Computer selects a number
+    com_choice = random.randint(0, 30)  # The Computer selects a number
     
     try:
         
